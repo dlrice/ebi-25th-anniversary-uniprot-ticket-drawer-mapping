@@ -1,0 +1,17 @@
+{
+  "name": "ebi-25th-anniversary-uniprot-ticket-drawer-mapping",
+  "version": "1.0.0",
+  "description": "Creates consistent (ie on any machine) mappings: drawer --> ticket and ticket --> drawer to be used in UniProt's game at the EBI 25th anniversary celebration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel L. Rice",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.0.18"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.1"
+  }
+}
