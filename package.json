@@ -1,11 +1,12 @@
 {
   "name": "ebi-25th-anniversary-uniprot-ticket-drawer-mapping",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates consistent (ie on any machine) mappings: drawer --> ticket and ticket --> drawer to be used in UniProt's game at the EBI 25th anniversary celebration.",
   "main": "dist/ebi-25.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --config webpack.js"
+    "build": "webpack --config webpack.js",
+    "release": "yarn build && yarn publish && git push --follow-tags origin master"
   },
   "jest": {
     "transform": {
