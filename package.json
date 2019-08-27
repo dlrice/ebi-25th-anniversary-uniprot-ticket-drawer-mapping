@@ -2,9 +2,15 @@
   "name": "ebi-25th-anniversary-uniprot-ticket-drawer-mapping",
   "version": "1.0.0",
   "description": "Creates consistent (ie on any machine) mappings: drawer --> ticket and ticket --> drawer to be used in UniProt's game at the EBI 25th anniversary celebration.",
-  "main": "index.js",
+  "main": "dist/ebi-25.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "webpack --config webpack.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
+    }
   },
   "author": "Daniel L. Rice",
   "license": "ISC",
@@ -12,6 +18,12 @@
     "chance": "^1.0.18"
   },
   "devDependencies": {
-    "eslint": "^6.2.1"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.2.1",
+    "jest": "^24.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   }
 }
